@@ -1,0 +1,20 @@
+
+.header {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+#i {
+    width: 70vw;
+}
+#players {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.player {
+    display: grid;
+    background-color: orange;
+    justify-items: center;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Roster</title>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input id='i' class='header' type='text' placeholder="Insert team">
+    <button class='header'>Get Roster</button>
+    <div id='players'></div>
+
+    <script id="player-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class='player'>
+            <p>{{firstName}} {{lastName}}</p>
+            <p>{{num}}</p>
+            <img src="{{img}}"">
+            <p>{{pos}}</p>
+        </div>
+        {{/each}}
+      </script>
+
+
+    <script src='jquery/dist/jquery.js'></script>
+    <script src='handlebars/dist/handlebars.js'></script>
+    <script src='main.js'></script>
+</body>
+</html>
