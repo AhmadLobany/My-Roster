@@ -9,15 +9,18 @@
 </head>
 <body>
     <input id='i' class='header' type='text' placeholder="Insert team">
-    <button class='header'>Get Roster</button>
-    <div id='players'></div>
+    <button id='getBut' class='header'>Get Roster</button>
+    <button id='dreamBut' class='header'>Dream Team!</button><br><br>
+    <p id='inst' class="header">Click on a player to add it to the Dream Team</p><br><br>
+    <div id='players'>
+    </div>
 
     <script id="player-template" type="text/x-handlebars-template">
         {{#each data}}
         <div class='player'>
-            <p>{{firstName}} {{lastName}}</p>
+            <p class='info'>{{firstName}} {{lastName}}</p>
             <p>{{num}}</p>
-            <img src="{{img}}"">
+            <img src='https://nba-players.herokuapp.com/players/{{lastName}}/{{firstName}}'>
             <p>{{pos}}</p>
         </div>
         {{/each}}

@@ -6,6 +6,11 @@
 #i {
     width: 70vw;
 }
+
+#inst {
+    position: relative;
+    left: 35vw;
+}
 #players {
     display: grid;
     grid-gap: 10px;
